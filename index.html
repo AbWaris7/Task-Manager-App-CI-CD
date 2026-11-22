@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">MY PRODUCTIVITY</p>
+      <h1>Task Manager</h1>
+      <p class="subtitle">A small step every day makes a big difference.</p>
+    </header>
+
+    <form id="task-form">
+      <label class="sr-only" for="task-input">New task</label>
+      <input id="task-input" type="text" placeholder="What do you need to do?" maxlength="100" required>
+      <button type="submit">Add task</button>
+    </form>
+
+    <section class="task-panel" aria-label="Your tasks">
+      <div class="panel-heading">
+        <h2>Your tasks</h2>
+        <span id="task-count">0 tasks</span>
+      </div>
+      <ul id="task-list"></ul>
+      <p id="empty-message">No tasks yet. Add your first task above.</p>
+    </section>
+    <footer>Practice project · Built with HTML, CSS and JavaScript</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

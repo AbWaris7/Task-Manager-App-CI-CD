@@ -3,6 +3,8 @@ name: Task Manager App
 
 on:
   workflow_dispatch:
+  push:
+    branches: ['main']
 
 jobs:
   Echo-Messages:
